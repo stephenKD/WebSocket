@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+
+  <Button
+      android:id="@+id/button_connect"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toLeftOf="@+id/button_disconnect"
+      android:text="Connect"
+      android:textAllCaps="false"
+      />
+  <Button
+      android:id="@+id/button_disconnect"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentTop="true"
+      android:text="Disconnect"
+      android:textAllCaps="false"
+      />
+
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/chat_recycler_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/button_send"
+      android:layout_below="@+id/button_disconnect">
+
+  </android.support.v7.widget.RecyclerView>
+
+  <EditText
+      android:id="@+id/edit"
+      android:layout_width="match_parent"
+      android:layout_height="40dp"
+      android:layout_alignParentBottom="true"
+      android:layout_toLeftOf="@+id/button_send"
+      android:hint="Send message..."/>
+  <Button
+      android:id="@+id/button_send"
+      android:layout_width="60dp"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:text="Send"
+      android:textAllCaps="false"
+      />
+
+</RelativeLayout>
